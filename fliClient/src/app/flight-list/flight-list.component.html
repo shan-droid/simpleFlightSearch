@@ -1,0 +1,26 @@
+<div class='table-responsive'>
+            <table id="flights">
+                <thead>
+                    <tr>					   
+                        <th>Flight</th>
+						<th>Origin</th>
+						<th>Dest</th>	
+						<th></th>						
+						<th>Departure<th>						
+						<th>Arrival</th>
+                    </tr>
+                </thead>
+				
+                <tbody>	
+				
+                    <tr *ngFor="let flight of flights;"> 						
+						<td>{{flight.flightNumber}}</td>
+						<td>{{flight.origin}}</td>
+						<td>{{flight.destination}}<td>
+						<td>{{flight.departure}}<td>						
+						<td>{{flight.arrival}}</td>
+                    </tr>
+                </tbody>
+				
+            </table>
+</div>
